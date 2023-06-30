@@ -1,0 +1,36 @@
+<div class="form-group">
+    <div class="content-div">
+        <div class="button-content">
+        <button  mat-fab  aria-label="EXIT" (click)="close()">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+        <div class="upload-content">
+                <input type="text" placeholder="Name of museum" #virtualPresentation>
+                <input type="text" placeholder="Date" #date>
+                <input type="text" placeholder="Start time" #time>
+                <input type="text" placeholder="Duration" #duration>
+                <br>
+                <br>
+            <div class="choose-div">
+            <label for="file">Choose Picture</label>
+            <br>
+            <input type="file"
+                   id="file"
+                   multiple
+                   (change)="handlePictureInput($event)">
+                   <br>
+                   <button class="upload-button" (click)="uploadPictureToActivity(virtualPresentation,date,time,duration)">UPLOAD</button>
+                </div>
+                <br>
+                        <div class="choose-div">
+                            <label for="file">Enter youtube link</label>
+                            <br>
+                            <input type="text" #link>
+                            <br>
+                                   <button class="upload-button" (click)="uploadLinkToActivity(link,virtualPresentation,date,time,duration)">UPLOAD</button>
+                                </div>
+        </div>
+        </div>
+   
+</div>

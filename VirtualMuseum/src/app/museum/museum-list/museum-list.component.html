@@ -1,0 +1,26 @@
+
+<body>
+    
+    <p class="title">MUSEUMS</p>
+    
+    <div class="content-div">
+        <div>
+        <input type="text" class="left-input"  matInput placeholder="Enter the name of the museum" #nameOfMuseum (keydown.enter)='findMuseumWithSpecifiedName(nameOfMuseum)'>
+        <mat-icon class="left-mat-icon">search</mat-icon>
+        <input type="text" class="right-input" matInput placeholder="Enter the city" #city (keydown.enter)='findMuseumsInSpecifiedCity(city)'>
+        <mat-icon class="right-mat-icon">search</mat-icon>
+        <div class="list-div">
+             <mat-grid-list cols="4" rowHeight="4:1">
+               <mat-grid-tile *ngFor="let item of museumsItems">
+                <div class="text-inside-grid">{{item}}</div>
+               <button mat-mini-fab class="view-details-button" (click)="viewDetails(item)">
+                <mat-icon>pageview</mat-icon>
+              </button>
+            </mat-grid-tile> 
+              </mat-grid-list>      
+        </div>
+    </div>
+   
+    </div>
+   
+</body>

@@ -1,0 +1,55 @@
+.main{
+    position: relative;
+    background-color:  #c8bfbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-title{
+    display: block;
+   position: absolute;
+   top: 50px;
+   margin: auto;
+    color: #fffdec;
+   
+}
+h1{
+    font-size: 5vw;
+}
+.login-content{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+}
+.mat-icon{
+   vertical-align: text-bottom ;
+}
+.login-card{
+    min-width: 20%;
+    min-height: 40%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.login-form{
+    position: relative;
+}
+.mat-raised-button{
+    position: relative;
+    background-color: #5c5940; 
+    color: #fffdec;  
+    width: 100%;
+}
+.error-input{
+   color: black;
+   border: none;
+}
+
+

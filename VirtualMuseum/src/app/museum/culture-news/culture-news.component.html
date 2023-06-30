@@ -1,0 +1,27 @@
+<body>
+    <p class="title">CULTURE NEWS</p>
+    
+    <div class="content-div">
+        <div>
+        <div class="list-div">
+             <mat-grid-list cols="2" rowHeight="5:3">
+               <mat-grid-tile *ngFor="let item of newsItems">
+                <div class="text-inside-grid">
+                    <p class="title-style"><b>{{item.title}}</b></p>
+                    <br>
+                    <p class="content-style">{{item.description}}</p>
+                    <a class="content-style" href="{{item.link}}">Link</a>
+                    <br>
+                    <img class="image-style" src="{{item.image}}"/>
+                    <br>
+                    <br>
+                    <p class="content-style">{{item.pubDate}}</p>
+                </div>
+            </mat-grid-tile> 
+              </mat-grid-list>      
+        </div>
+    </div>
+   
+    </div>
+   
+</body>

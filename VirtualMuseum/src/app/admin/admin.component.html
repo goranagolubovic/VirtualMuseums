@@ -1,0 +1,65 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <div class="content">
+        <div class="main-content">
+            <div class="statistic-div">
+                <div class="text-div">Number of registrated users:
+                    <span class="div-mat-badge" matBadge={{numberOfRegUsers}} matBadgeOverlap="false"></span>
+                </div>
+                <br>
+                <div class="text-div">Number of active users:
+                    <span class="div-mat-badge" matBadge={{numberOfActiveUsers}} matBadgeOverlap="false"></span>
+                </div>
+                <br>
+                <a class="link-style" href="admin/logs" target="_blank">User logs>></a>
+            </div>
+        </div>
+        <div class="central-content">
+            <div class="image-div">
+                <img src="assets/images/statue1.png">
+            </div>
+            <div class="space-div"></div>
+            <div class="menu">
+                <div class="menu-column">
+                    <div class="menu-row">
+                        <button mat-fab class="button-style" (click)="openMuseumDialog()">
+                            <mat-icon>account_balance</mat-icon>
+                        </button>
+                        <br>
+                        <label>Museums</label>
+                    </div>
+                    <div  class="menu-row"> 
+                        <form  method="post" action="http://localhost:8082/VirtualMuseumJSP?authorization={{token}}">
+                        <button type="submit" mat-fab class="button-style">
+                            <mat-icon>person</mat-icon>
+                        </button>
+                        </form>
+                        <br>
+                        <label>Users</label>
+                        
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <div  class="menu-row">
+                        <button mat-fab class="button-style" (click)="openVirtualTourDialog()">
+                            <mat-icon>schedule</mat-icon>
+                        </button>
+                        <br>
+                        <label>Virtual tours</label>
+                    </div>
+                    <div  class="menu-row"> 
+                        <button mat-fab class="button-style" (click)="createVirtualPresentation()">
+                            <mat-icon>visibility</mat-icon>
+                        </button>
+                        <br>
+                        <label>Virtual presentations</label>
+                    </div>
+                </div>
+            </div>
+            <div class="space-div"></div>
+            <div class="chart">
+                <app-chart></app-chart>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,57 @@
+.body-style{
+    background-color:  #c8bfbf; 
+}
+.main{
+    position: relative;
+    background-color:  #c8bfbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-title{
+    display: block;
+   position: absolute;
+   top: 50px;
+   margin: auto;
+    color: #fffdec;
+   
+}
+h1{
+    font-size: 5vw;
+}
+.registration-content{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+}
+
+.registration-card{
+    min-width: 20%;
+    min-height: 80%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.registration-form{
+    position: relative;
+}
+.button-style{
+    position: relative;
+    background-color: #888187; 
+    color: #fffdec;  
+    width: 100%;
+}
+.error-input{
+   color: black;
+   border: none;
+   height: 30px;
+}
+
+

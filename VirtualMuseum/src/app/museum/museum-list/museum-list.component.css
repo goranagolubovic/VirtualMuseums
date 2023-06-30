@@ -1,0 +1,93 @@
+.title{
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    left: 0px;
+    color: #86878c; 
+}
+
+.content-div{
+    background-color: #c8bfbf;
+    position: absolute;
+	bottom: 0px;
+	top: 100px;
+	left: 0px;
+	right: 0px;
+	overflow-y: auto;
+}
+.text-inside-grid {
+    position: absolute;
+    left: 5px;
+  }
+.list-div{
+    background-color: #fffcfc;
+    position: absolute;
+	bottom: 40px;
+	top: 140px;
+	left: 40px;
+	right: 40px;
+    text-align: left;
+	overflow-y: auto;   
+}
+.row-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.name-search{
+    position: absolute;
+	bottom: 40px;
+	top: 80px;  
+}
+.left-input{
+    position: absolute;
+    bottom: 40px;
+	top: 80px;  
+	left: 40px;
+	right: 40px;
+    width:280px;
+    height: 30px;
+    background-color: #fffcfc;;
+    text-align: center;
+}
+.right-input{
+    float: right;
+    position: absolute;
+    bottom: 40px;
+	top: 80px;
+    right: 40px;
+    left: 1210px;
+    width:280px;
+    height: 30px;
+    background-color: #fffcfc;;
+    text-align: center;
+}
+.left-mat-icon{
+    position: absolute;
+    vertical-align: text-bottom;
+    bottom: 40px;
+	top: 85px;  
+    right:240 px;
+    left: 280px;
+}
+.right-mat-icon{
+    position: absolute;
+    vertical-align: text-bottom;
+    bottom: 40px;
+	top: 85px;  
+    right:0px;
+    left: 1450px;
+}
+.view-details-button{
+    position: absolute;
+    left: 190px;
+    background-color: #8c8686;
+}
+@media all and (max-width: 600px) {
+   .row-container {
+     flex-wrap: nowrap;
+    }
+  }

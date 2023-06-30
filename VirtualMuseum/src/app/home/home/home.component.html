@@ -1,0 +1,45 @@
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="main">
+   <img src="assets/images/acroplise.png" width="100%" height="800px" />
+   <div class="main-title">
+     <h1> VIRTUAL MUSEUM</h1>
+
+     </div>
+   <div class="login-content">
+
+      <mat-card class="login-card">
+         <mat-card-content>
+            <form class="login-form" [formGroup]="form">
+               <mat-form-field>
+                  <div>
+                     <mat-icon>person</mat-icon>
+                  <mat-label>Username</mat-label>
+               </div>
+                  <input matInput placeholder="Username" formControlName="username">
+                 
+               
+               </mat-form-field>
+               <br>
+               <mat-form-field>
+                  <div>
+                     <mat-icon>key</mat-icon>
+                  <mat-label>Password</mat-label>
+               </div>
+               <input matInput placeholder="Password" formControlName="password">
+               </mat-form-field>
+               <br>
+               <input class="error-input" type="text" #error/>
+              
+            </form>
+            <br>
+            <mat-card-actions>
+               <button mat-raised-button (click)="login(form,error)">LOGIN</button>
+            </mat-card-actions>
+            <span class="registration">Don't have an account?</span>
+            <br>
+            <a routerLink="/registration" class="registration" routerLinkActive="primary" >Create account</a>
+         </mat-card-content>
+      </mat-card>
+   </div>

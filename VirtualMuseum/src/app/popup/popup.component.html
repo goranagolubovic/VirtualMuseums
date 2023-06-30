@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <div class="content-div">
+        <div class="button-content">
+        <button  mat-fab  aria-label="EXIT" (click)="close()">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+    <div class="museum-content">
+     
+            <mat-card class="museum-card">
+               <mat-card-content>
+                  <form class="museum-form" [formGroup]="form">
+                     <mat-form-field>
+                        <mat-label>Country</mat-label>
+                        <mat-select ngDefaultControl formControlName="country" >
+                            <mat-option *ngFor="let item of countriesItem" [value]={item} (onSelectionChange)="fillRegions($event, item)">{{item}}</mat-option>
+                          </mat-select>
+                     </mat-form-field>
+                     <br>
+                     <mat-form-field>
+                        <mat-label>Region</mat-label>
+                        <mat-select ngDefaultControl [hidden]="regionsItem!=null && regionsItem.length!=0">
+                            <mat-option *ngFor="let item of regionsItem" [value]={item} (onSelectionChange)="fillCities($event, item)">{{item}}</mat-option>
+                          </mat-select>
+                     </mat-form-field>
+                     <br>
+                     <mat-form-field>
+                        <mat-label>City</mat-label>
+                        <mat-select id="select2" ngDefaultControl  formControlName="city">
+                            <mat-option *ngFor="let item of citiesItem" [value]={item}>{{item}}</mat-option>
+                          </mat-select>
+                     </mat-form-field>
+                     <mat-form-field>
+                         <mat-label>Adress</mat-label>
+                         <input matInput placeholder="Address" formControlName="address">
+                      </mat-form-field>
+                      <mat-form-field>
+                         <mat-label>Telephone</mat-label>
+                         <input matInput placeholder="Telephone" formControlName="telephone">
+                      </mat-form-field>
+                      <mat-form-field>
+                         <mat-label>Name</mat-label>
+                         <input matInput placeholder="Name" formControlName="name">
+                      </mat-form-field>
+                      <mat-form-field>
+                         <mat-label>Type of museum</mat-label>
+                         <input matInput placeholder="Type" formControlName="type">
+                      </mat-form-field>
+                      <mat-form-field>
+                        <mat-label>Geolocation</mat-label>
+                        <input matInput placeholder="Geolocation" formControlName="geolocation">
+                     </mat-form-field>
+                     <mat-form-field>
+                        <mat-label>Price for ticket</mat-label>
+                        <input matInput placeholder="Price" formControlName="price">
+                     </mat-form-field>
+                  <br>
+                 <input type="text" #error/>
+                  <br>
+                  <mat-card-actions>
+                     <button mat-raised-button class="museum-button" (click)="addMuseum(form,error)">SAVE</button>
+                  </mat-card-actions>
+                </form>
+               </mat-card-content>
+            </mat-card>
+        </div>
+          
+         </div>
+      
+    
+</body>

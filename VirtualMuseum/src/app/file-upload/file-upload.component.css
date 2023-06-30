@@ -1,0 +1,64 @@
+.content-div{
+    height: 750px;
+    width:600px;
+    background-color: #DCDBD0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.button-content{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    margin: auto;
+  height: 20%;
+  width: 100%;
+  display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.mat-fab{
+    background-color: #c8bfbf;
+}
+mat-icon{
+   font-size: 55px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-content{
+   width: 100%;
+   height: 80%;
+   flex-wrap: wrap;
+   display: flex;
+   flex-direction: column;
+   justify-content: top;
+   align-items: center;
+}
+.choose-div{
+    background-color: #c8bfbf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upload-form{
+    position: relative;
+    left: 40px;
+}
+.upload-button{
+    background-color: #8c8686;
+    height: 30px;
+    width: 100px;
+    color: #fffdec;
+}
+input {
+    font-size: 1vw;
+    width: 250px;
+    height: 40px;
+    resize: none;
+    outline: none;
+   
+}

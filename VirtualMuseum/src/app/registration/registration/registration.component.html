@@ -1,0 +1,55 @@
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="body-style">
+    <div class="main">
+        <div class="main-title">
+         <h1>
+           REGISTRATION</h1></div>
+        <div class="registration-content">
+     
+           <mat-card class="registration-card">
+              <mat-card-content>
+                 <form id="form" method="post" class="registration-form" [formGroup]="form" (ngSubmit)="addUser(form,error)">
+                    <mat-form-field>
+                       <mat-label>Name</mat-label>
+                       <input matInput type="text" placeholder="Name" formControlName="name" required="required">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                       <mat-label>Surname</mat-label>
+                       <input matInput placeholder="Surname" formControlName="surname" required="required">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <mat-label>Username</mat-label>
+                        <input matInput type="text" placeholder="Username" formControlName="username" required minlength="12" pattern="[^@#/]+" >
+                     </mat-form-field>
+                     <br>
+                     <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Email" formControlName="email">
+                     </mat-form-field>
+                     <br>
+                     <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" formControlName="password" minlength="15" pattern="^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])([a-zA-Z0-9]+)$">
+                     </mat-form-field>
+                     <br>
+                     <mat-form-field>
+                        <mat-label>Confirm password</mat-label>
+                        <input matInput placeholder="Confirm password" formControlName="passwordConfirmed" >
+                     </mat-form-field>
+                 <br>
+                <input type="text" class="error-input" #error/>
+                 <br>
+                 <button type="submit" mat-raised-button class="button-style">REGISTER</button>
+                 <br>
+                 <br>
+               </form>
+              
+              </mat-card-content>
+           </mat-card>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,60 @@
+.content-div{
+    height: 700px;
+    width:600px;
+    background-color: #DCDBD0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.button-content{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    margin: auto;
+  height: 10%;
+  width: 100%;
+  display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.mat-fab{
+    background-color: #c8bfbf;
+}
+mat-icon{
+   font-size: 55px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.museum-content{
+   width: 50%;
+   height: 100%;
+}
+.museum-card{
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+.museum-form{
+    position: relative;
+    left: 40px;
+}
+.museum-button{
+    background-color: #8c8686;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    left: 55px; 
+    color: #fffdec;
+}
+input {
+    border: none;
+    background-color: transparent;
+    width: 190px;
+    resize: none;
+    outline: none;
+}

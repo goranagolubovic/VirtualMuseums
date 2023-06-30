@@ -1,0 +1,31 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <div class="content-div">
+        <div class="tickets-div" *ngFor="let item of listOfTicketsOdd;">
+            <br>
+            <div class="ticket-div">
+                <br>
+            <p class="card-tile"><b>TICKET FOR {{item.muzej.naziv}} </b></p>
+            <p>DATE: {{item.datum}}</p>
+            <p>TIME: {{item.vrijeme}}</p>
+            <p>DURATION: {{item.trajanje}}</p>
+            <input #error>
+            <button  class="button-style" (click)="startVirtualTour(error,item)">START THE VISIT</button>
+            <br>
+        </div>
+        </div>
+        <div class="tickets-div" *ngFor="let item of listOfTicketsEven;">
+            <br>
+            <div class="ticket-div">
+                <br>
+            <p class="card-tile"><b>TICKET FOR {{item.muzej.naziv}}</b></p>
+            <p>{{item.datum}}</p>
+            <p>{{item.vrijeme}}</p>
+            <p>{{item.trajanje}}</p>
+            <input #error>
+            <button  class="button-style" (click)="startVirtualTour(error,item)">START THE VISIT</button>
+            <br>
+        </div>
+        </div>
+    </div>

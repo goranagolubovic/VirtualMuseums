@@ -1,0 +1,27 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <p class="title">ACTIVE VIRTUAL VISITS</p>
+    
+    <div class="content-div">
+        <div class="content-style-div">
+        <div class="list-div">
+             <mat-grid-list cols="3" rowHeight="3:2">
+               <mat-grid-tile  *ngFor="let item of activeVisitsFormated">
+                <div class="text-inside-grid">
+                <p>{{item.muzej.naziv}}</p>
+                <p>Date: {{item.datum}}</p>
+                <p>Start: {{item.vrijeme}}</p>
+                <p>Duration: {{item.trajanjeFormatirano}} h</p>
+            </div>
+            </mat-grid-tile> 
+              </mat-grid-list>      
+        </div>
+    </div>
+   
+    </div>
+   
+</body>
+

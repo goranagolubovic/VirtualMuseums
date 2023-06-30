@@ -1,0 +1,25 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="main-div">
+    <div class="content-div" >
+        <div class="pictures-div" *ngFor="let item of pictures;" >
+            <div class="picture-group">
+                <div class="div-split"></div>
+                <div class="picture-div">
+                    <img src="{{item}}" width="100%" height="100%" />
+                </div>
+                <div class="div-split"></div>
+            </div>
+        </div>
+    </div>
+    <div class="picture-group">
+        <div class="picture-div">
+            <iframe width="560" height="315" [src]="video | safe : 'resourceUrl'" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    </div>
+</div>

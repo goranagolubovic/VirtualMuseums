@@ -1,0 +1,14 @@
+<head>
+
+</head>
+<div class="main-content">
+    <div  *ngFor="let item of fileContent">
+    <p>{{item}}</p>
+    <br>
+</div>
+    <br>
+    <br>
+    <button mat-stroked-button class="button-style" (click)="downloadLogs()">
+        DOWNLOAD
+    </button>
+</div>

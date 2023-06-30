@@ -1,0 +1,8 @@
+.background{
+	background-color:#8c8686;
+	font-size:14px;
+}
+.checkbox-input{
+	height:30px;
+	width:30px;
+}

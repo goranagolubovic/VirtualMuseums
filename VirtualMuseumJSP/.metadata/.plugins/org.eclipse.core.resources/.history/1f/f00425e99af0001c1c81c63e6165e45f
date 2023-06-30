@@ -1,0 +1,6 @@
+.background{
+	background-color:grey;
+}
+.table{
+	width:300px
+}

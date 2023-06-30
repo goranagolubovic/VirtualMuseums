@@ -1,0 +1,59 @@
+.content-div{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #dcdbd0;
+}
+.right-div {
+    display: flex;
+    float: right;
+	align-items:center;
+    justify-content: center;
+    background-color: #9a9692;
+    font-size: 30px;
+    width: 65%;
+    height: 100%;
+
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+.left-div{
+    float: left;
+    height: 100%;
+    width: 35%;
+    background-color: #9a9692;
+}
+
+mat-card{
+    max-width: 35%;
+    max-height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+form{
+    position: relative;
+    left: 85px;
+    border: none;
+    background-color: transparent;
+}
+.register-button{
+    background-color: #9a9692;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    left: 55px; 
+    color: #fffdec;
+}
+input {
+    border: none;
+    background-color: transparent;
+}
+mat-label{
+    border: none;
+    background-color: transparent;
+}

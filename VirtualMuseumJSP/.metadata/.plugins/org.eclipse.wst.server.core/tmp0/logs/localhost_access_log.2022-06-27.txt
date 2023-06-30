@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:06:38:30 +0200] "POST /VirtualMuseumJSP?authorization=AB12FGHDEC HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:06:38:33 +0200] "GET /VirtualMuseumJSP/?authorization=AB12FGHDEC HTTP/1.1" 200 3361
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:06:38:34 +0200] "GET /VirtualMuseumJSP/styles/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:06:38:35 +0200] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:06:38:45 +0200] "POST /VirtualMuseumJSP/?action=approve&checked=approver&id=2 HTTP/1.1" 200 3378
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:06:39:27 +0200] "POST /VirtualMuseumJSP/?action=delete&id=4 HTTP/1.1" 200 2617
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:09:50:08 +0200] "POST /VirtualMuseumJSP?authorization=AB12FGHDEC HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:09:50:09 +0200] "GET /VirtualMuseumJSP/?authorization=AB12FGHDEC HTTP/1.1" 200 4133
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:09:50:20 +0200] "POST /VirtualMuseumJSP/?action=approve&checked=approver&id=5 HTTP/1.1" 200 4150
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:09:50:22 +0200] "POST /VirtualMuseumJSP/?action=approve&checked=approver&id=5 HTTP/1.1" 200 4133
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:09:50:23 +0200] "POST /VirtualMuseumJSP/?action=approve&checked=approver&id=3 HTTP/1.1" 200 4150
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:09:50:30 +0200] "POST /VirtualMuseumJSP/?action=update&id=6 HTTP/1.1" 200 4145
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:18:32:46 +0200] "POST /VirtualMuseumJSP?authorization=AB12FGHDEC HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:18:32:48 +0200] "GET /VirtualMuseumJSP/?authorization=AB12FGHDEC HTTP/1.1" 200 3361
+0:0:0:0:0:0:0:1 - - [27/Jun/2022:18:32:52 +0200] "POST /VirtualMuseumJSP/?action=approve&checked=approver&id=2 HTTP/1.1" 200 3378

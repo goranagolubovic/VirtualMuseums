@@ -1,0 +1,65 @@
+package dao;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import dto.Bill;
+
+
+public class BillDAO {
+	private static ConnectionPool connectionPool = ConnectionPool.getConnectionPool();
+	private static final String SQL_SELECT_BY_USERID = "SELECT * FROM racun WHERE registrovani_korisnik_id=?";
+	private static final String SQL_BILL_UPDATE = "UPDATE racun set dozvola_placanja = ? where  registrovani_korisnik_id = ?";
+	
+	public static Bill selectByUserId(int userId){
+		Bill bill = null;
+		Connection connection = null;
+		ResultSet rs = null;
+		Object values[] = {userId};
+		try {
+			connection = connectionPool.checkOut();
+			PreparedStatement pstmt = DAOUtil.prepareStatement(connection,
+					 SQL_SELECT_BY_USERID, false, values);
+			rs = pstmt.executeQuery();
+			if (rs.next()){
+				bill = new Bill(rs.getInt("broj_kartice"), 
+						rs.getString("tip_kreditne_kartice"),
+						rs.getInt("pin"), 
+						rs.getDouble("stanje_racuna"), 
+						rs.getInt("registrovani_korisnik_id"),
+						rs.getString("datum_isteka"),
+						rs.getBoolean("dozvola_placanja"));
+			}
+			pstmt.close();
+		} catch (SQLException exp) {
+			exp.printStackTrace();
+		} finally {
+			connectionPool.checkIn(connection);
+		}
+		return bill;
+	}
+	
+	public static boolean changePaymentApprovment(int isAllowed,int userId) {
+		boolean result = true;
+		Connection connection = null;
+		ResultSet rs = null;
+		Object values[] = {isAllowed,userId};
+		try {
+			connection = connectionPool.checkOut();
+			PreparedStatement pstmt = DAOUtil.prepareStatement(connection,
+					SQL_BILL_UPDATE, false, values);
+			 pstmt.executeUpdate();
+			pstmt.close();
+		} catch (SQLException exp) {
+			exp.printStackTrace();
+		} finally {
+			connectionPool.checkIn(connection);
+		}
+		return result;
+	}
+	
+
+}

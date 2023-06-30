@@ -1,0 +1,11 @@
+package beans;
+
+import java.io.Serializable;
+
+public class UserAccountBean implements Serializable {
+
+	public UserAccountBean() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,42 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+    <div class="left-div"><img src="/assets/images/museum_figures.jpg" /></div>
+    <div class="main-div">
+    <div class="right-div">
+        <div class="weather-div">
+            <div class="weather-content-div"  *ngFor="let item of weathersItem">
+                <p class="city-style"><b>{{item.city}}</b></p>
+                <p class="content-weather-style">current temperature: {{item.temp}}°C</p>
+                <p class="content-weather-style">subjective feel: {{item.feelsLike}}°C</p>
+                <p class="content-weather-style">time: {{item.dateTime}}</p>
+                <div class="weather-icon"><img class="weather-icon" src={{item.icon}}></div>
+                
+            </div>
+        </div>
+        <div class="content" >
+            <mat-card>
+                <mat-card-content>
+                    <p>Museum's name : {{museumsName}}</p>
+                    <p></p>
+                    <p>Address: {{museumsAddress}}</p>
+                    <p></p>
+                    <p>Telephone number : {{museumsTelNumber}}</p>
+                    <p></p>
+                    <p>Country : {{museumsCountry}}</p>
+                    <p></p>
+                    <p>City : {{museumsCity}}</p>
+                    <p></p>
+                    <p>Type of museum : {{museumsType}}</p>
+                    <p></p>
+                    <div class="map" id="map" class="match-parent"></div>
+                </mat-card-content>
+            </mat-card>
+          
+    </div>
+    <button class="button-style" mat-raised-button (click)="buyTicket(message)">Buy a ticket</button>
+    <input class="input-style" type="text" #message/>
+    </div>
+</div>
+</body>

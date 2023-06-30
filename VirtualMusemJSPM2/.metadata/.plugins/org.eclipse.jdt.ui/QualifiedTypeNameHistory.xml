@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="dto.Message"/>
+    <fullyQualifiedTypeName name="dto.User"/>
+    <fullyQualifiedTypeName name="beans.TransactionBean"/>
+    <fullyQualifiedTypeName name="dto.Transaction"/>
+    <fullyQualifiedTypeName name="dao.TransactionDAO"/>
+    <fullyQualifiedTypeName name="dao.BillDAO"/>
+    <fullyQualifiedTypeName name="dto.Bill"/>
+    <fullyQualifiedTypeName name="beans.PaymentBean"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
+</qualifiedTypeNameHistroy>

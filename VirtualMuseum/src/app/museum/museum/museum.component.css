@@ -1,0 +1,33 @@
+.left-div{
+    display: flex;
+    float: left;
+    width: 50%;
+}
+.right-div {
+	display:flex;
+	align-items:center;
+    justify-content: center;
+    background-color: #c8bfbf;
+    width: 50%;
+    height: 800px;
+}
+
+.button-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button{
+    height: 5vw;
+    width: 25vw;
+    position: relative;
+    color: #fffdec;
+    background-color: #8d8f8e;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

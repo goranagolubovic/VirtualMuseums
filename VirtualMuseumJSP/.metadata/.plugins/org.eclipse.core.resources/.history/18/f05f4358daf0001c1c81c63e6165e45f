@@ -1,0 +1,78 @@
+package beans;
+
+import java.io.Serializable;
+
+public class UserAccountBean implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5999259509194624596L;
+	private int id;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getIme() {
+		return ime;
+	}
+	public void setIme(String ime) {
+		this.ime = ime;
+	}
+	public String getPrezime() {
+		return prezime;
+	}
+	public void setPrezime(String prezime) {
+		this.prezime = prezime;
+	}
+	public String getKorisnicko_ime() {
+		return korisnicko_ime;
+	}
+	public void setKorisnicko_ime(String korisnicko_ime) {
+		this.korisnicko_ime = korisnicko_ime;
+	}
+	public String getLozinka() {
+		return lozinka;
+	}
+	public void setLozinka(String lozinka) {
+		this.lozinka = lozinka;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public Boolean getIs_admin() {
+		return is_admin;
+	}
+	public void setIs_admin(Boolean is_admin) {
+		this.is_admin = is_admin;
+	}
+	public Boolean getIs_active() {
+		return is_active;
+	}
+	public void setIs_active(Boolean is_active) {
+		this.is_active = is_active;
+	}
+	public Boolean getIs_approved() {
+		return is_approved;
+	}
+	public void setIs_approved(Boolean is_approved) {
+		this.is_approved = is_approved;
+	}
+	private String ime;
+	private String prezime;
+	private String korisnicko_ime;
+	private String lozinka;
+	private String email;
+	private Boolean is_admin;
+	private Boolean is_active;
+	private Boolean is_approved;
+	public UserAccountBean() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

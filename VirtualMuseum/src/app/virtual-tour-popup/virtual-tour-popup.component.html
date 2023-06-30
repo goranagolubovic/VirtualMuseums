@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <div class="content-div">
+        <div class="button-content">
+        <button  mat-fab  aria-label="EXIT" (click)="close()">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+    <div class="museum-content">
+     
+            <mat-card class="museum-card">
+               <mat-card-content>
+                  <form class="museum-form" [formGroup]="form">
+                    <mat-form-field>
+                     <mat-label>Museum's name</mat-label>
+                     <mat-select #select ngDefaultControl  formControlName="name">
+                         <mat-option *ngFor="let item of museumsItems" [value]={item} (onSelectionChange)="setMuseumName($event, item)">{{item}}</mat-option>
+                       </mat-select>
+                     </mat-form-field>
+                     <mat-form-field>
+                         <mat-label>Date</mat-label>
+                         <input matInput placeholder="Date" formControlName="date">
+                      </mat-form-field>
+                      <mat-form-field>
+                         <mat-label>Time</mat-label>
+                         <input matInput placeholder="Time" formControlName="time">
+                      </mat-form-field>
+                      <mat-form-field>
+                         <mat-label>Duration</mat-label>
+                         <input matInput placeholder="Duration" formControlName="duration">
+                      </mat-form-field>
+                 <input type="text" #error/>
+                  <br>
+                  <mat-card-actions>
+                     <button mat-raised-button class="museum-button" (click)="addVirtualTour(form,error)">SAVE</button>
+                  </mat-card-actions>
+                </form>
+               </mat-card-content>
+            </mat-card>
+        </div>
+          
+         </div>
+      
+    
+</body>
+
